@@ -16,4 +16,12 @@ RSpec.describe WildDice do
 
     expect(dice.roll).to eq('1111')
   end
+
+  it 'creates dices with n digits' do
+    dice = WildDice.new(2)
+
+    allow(dice).to receive(:rand).and_return(1)
+
+    expect(dice.roll).to eq('11')
+  end
 end
