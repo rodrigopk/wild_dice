@@ -3,8 +3,6 @@ AllCops:
     - 'bin/**/*'
     - 'vendor/**/*'
   TargetRubyVersion: 2.4
-Style/TrailingCommaInArrayLiteral:
-  EnforcedStyleForMultiline: comma
 Style/TrailingCommaInHashLiteral:
   EnforcedStyleForMultiline: comma
 Style/TrailingCommaInArguments:
