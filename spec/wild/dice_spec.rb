@@ -2,15 +2,15 @@
 
 require 'minitest/autorun'
 
-require_relative '../lib/wild_dice'
+require_relative '../../lib/wild/dice'
 
-RSpec.describe WildDice do
+RSpec.describe Wild::Dice do
   it 'creates a dice' do
-    WildDice.new
+    Wild::Dice.new
   end
 
   it 'rolls a random number' do
-    dice = WildDice.new
+    dice = Wild::Dice.new
 
     allow(dice).to receive(:rand).and_return(1)
 
@@ -18,7 +18,7 @@ RSpec.describe WildDice do
   end
 
   it 'creates dices with n digits' do
-    dice = WildDice.new(2)
+    dice = Wild::Dice.new(2)
 
     allow(dice).to receive(:rand).and_return(1)
 
