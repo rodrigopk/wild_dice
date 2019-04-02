@@ -5,7 +5,7 @@ require File.expand_path('../lib/wild/version', __FILE__)
 Gem::Specification.new do |s|
   s.name         = 'wild_dice'
   s.version      = Wild::VERSION
-  s.platform     = Gem::Platform::RUBYr
+  s.platform     = Gem::Platform::RUBY
   s.date         = '2019-04-02'
   s.summary      = 'Rolls pseudo random dices'
   s.description  = 'A gem to roll random dices'
